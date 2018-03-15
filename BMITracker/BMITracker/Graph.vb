@@ -1,11 +1,12 @@
 ﻿Public Class Graph
-    Dim weighttable As New DataTable
-
+    Dim datset As New DataSet
+    Dim weighttable As DataTable
     Private Sub Chart1_Click(sender As Object, e As EventArgs) Handles WeightChart.Click
-
     End Sub
 
     Private Sub Graph_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'DatabaseDataSet2.Table1' table. You can move, or remove it, as needed.
+        weighttable = DatabaseDataSet2.Table1.CopyToDataTable()
         weighttable.Columns.Add("Weight", GetType(Integer))
         weighttable.Columns.Add("Time", GetType(Integer))
         weighttable.Rows.Add(0, 0)

@@ -27,7 +27,7 @@
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
 
         'Open add new weight form
-        'frmNew.Show()
+        frmAdd.Show()
 
     End Sub
 

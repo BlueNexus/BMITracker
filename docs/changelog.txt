@@ -1,0 +1,3 @@
+21/3/18
+Main form designed and BMI calculator implemented
+Integrated with bens work with graph form and pushed to github

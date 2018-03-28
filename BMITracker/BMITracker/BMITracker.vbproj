@@ -85,6 +85,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmAdd.Designer.vb">
+      <DependentUpon>frmAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Graph.Designer.vb">
       <DependentUpon>Graph.vb</DependentUpon>
     </Compile>
@@ -110,6 +116,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdd.resx">
+      <DependentUpon>frmAdd.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Graph.resx">
       <DependentUpon>Graph.vb</DependentUpon>

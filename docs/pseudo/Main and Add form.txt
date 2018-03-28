@@ -1,0 +1,26 @@
+Main form pseudocode
+
+#Variables
+usrName = name.txt
+usrHeight = height.txt
+usrWeight = weight.txt
+dim BMI as float
+BMI = BMI Calculation
+
+BMIcalc.click = Display BMI in label
+addNewBTN.click = open addForm
+statsBTN.click = open statsForm
+infoBTN.click = open infoForm
+timersBTN.click = open timersForm
+fileselectBTN.click = windows default file open
+savefileBTN.click = windows default file save
+exitBTN.click = end execution
+
+Add new weight form
+
+#Variables
+
+useWeight = weight.txt
+
+okBTN.click = Save usrWeight and current timestamp to current file
+cancelBTN.click = Exit form without savings

@@ -36,4 +36,15 @@
         Graph.Show()
 
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+        'Hides the Main menu
+        Me.Hide()
+        'Load the Info Form
+        Info.Show()
+    End Sub
 End Class

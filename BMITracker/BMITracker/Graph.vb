@@ -1,8 +1,11 @@
-﻿Imports System.Windows.Forms.DataVisualization.Charting
+﻿
+
+
+Imports System.Windows.Forms.DataVisualization.Charting
 Public Class Graph
 
-    Dim datset As New DataSet
-    Dim weighttable As New DataTable
+    Dim datset As New DataSet()
+    Dim weighttable As New DataTable()
 
     Private Sub Chart1_Click(sender As Object, e As EventArgs) Handles WeightChart.Click
     End Sub
@@ -10,7 +13,7 @@ Public Class Graph
     Private Sub Graph_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'DatabaseDataSet2.Table1' table. You can move, or remove it, as needed.
         'weighttable = DatabaseDataSet2.Table1.CopyToDataTable()
-        WeightChart.DataSource = DatabaseDataSet2.Table1
+        WeightChart.DataSource = DatabaseDataSet
         weighttable.Columns.Add("Weight", GetType(Integer))
         weighttable.Columns.Add("Time", GetType(Integer))
         weighttable.Rows.Add(0, 0)
@@ -27,10 +30,14 @@ Public Class Graph
             .AxisX.Title = "Time"
             .AxisY.Title = "Weight"
         End With
+
     End Sub
 
+
     Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
+        Table1TableAdapter.Fill(weighttable)
         With WeightChart.Series(0)
+
             .Points.DataBind(weighttable.DefaultView, "Weight", "Weight", Nothing)
             .ChartType = DataVisualization.Charting.SeriesChartType.Line
             .BorderWidth = 4

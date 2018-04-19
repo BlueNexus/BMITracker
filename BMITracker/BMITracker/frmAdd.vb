@@ -11,20 +11,21 @@ Public Class frmAdd
 
 
         'Get weight
-        Dim weight As Single = txtWeight.Text
+        Dim weight As Integer = txtWeight.Text
 
         'Update database
-        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
-        dataFile = "C\Database.accdb"
-        connString = provider & dataFile
+        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Database.accdb"
+        connString = provider
         myConnection.ConnectionString = connString
         myConnection.Open()
+        MsgBox(myConnection.state())
         Dim str As String
-        str = "Update [Table1] set [weight] = '" & txtWeight.Text & "' Where [ID] = 1"
+        str = "INSERT INTO Table1 ([Weight], [BMI]) VALUES ('" & weight & "','" & 3 & "');"
         Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
+        cmd.ExecuteNonQuery()
 
         'Close
-        Me.Close()
+        myConnection.Close()
 
     End Sub
 

@@ -47,4 +47,8 @@
         'Load the Info Form
         Info.Show()
     End Sub
+
+    Private Sub btnStats_Click(sender As Object, e As EventArgs) Handles btnStats.Click
+        StatsForm.Show()
+    End Sub
 End Class

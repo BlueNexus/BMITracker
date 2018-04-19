@@ -23,40 +23,40 @@ Partial Class Graph
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.WeightChart = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.btnLoad = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Table1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DatabaseDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DatabaseDataSet2 = New BMITracker.DatabaseDataSet()
-        Me.Table1BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Table1TableAdapter1 = New BMITracker.DatabaseDataSetTableAdapters.Table1TableAdapter()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Table1BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DatabaseDataSet2 = New BMITracker.DatabaseDataSet()
+        Me.Table1TableAdapter1 = New BMITracker.DatabaseDataSetTableAdapters.Table1TableAdapter()
         CType(Me.WeightChart, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Table1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DatabaseDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DatabaseDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Table1BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DatabaseDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'WeightChart
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.WeightChart.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.WeightChart.Legends.Add(Legend2)
+        ChartArea1.Name = "ChartArea1"
+        Me.WeightChart.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.WeightChart.Legends.Add(Legend1)
         Me.WeightChart.Location = New System.Drawing.Point(-2, -1)
         Me.WeightChart.Name = "WeightChart"
-        Series2.ChartArea = "ChartArea1"
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Me.WeightChart.Series.Add(Series2)
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.WeightChart.Series.Add(Series1)
         Me.WeightChart.Size = New System.Drawing.Size(1020, 419)
         Me.WeightChart.TabIndex = 0
         Me.WeightChart.Text = "WeightChart"
@@ -87,20 +87,6 @@ Partial Class Graph
         '
         Me.Table1BindingSource.DataMember = "Table1"
         '
-        'DatabaseDataSet2
-        '
-        Me.DatabaseDataSet2.DataSetName = "DatabaseDataSet"
-        Me.DatabaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Table1BindingSource1
-        '
-        Me.Table1BindingSource1.DataMember = "Table1"
-        Me.Table1BindingSource1.DataSource = Me.DatabaseDataSet2
-        '
-        'Table1TableAdapter1
-        '
-        Me.Table1TableAdapter1.ClearBeforeFill = True
-        '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
@@ -119,6 +105,20 @@ Partial Class Graph
         Me.DataGridViewTextBoxColumn3.HeaderText = "BMI"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
+        'Table1BindingSource1
+        '
+        Me.Table1BindingSource1.DataMember = "Table1"
+        Me.Table1BindingSource1.DataSource = Me.DatabaseDataSet2
+        '
+        'DatabaseDataSet2
+        '
+        Me.DatabaseDataSet2.DataSetName = "DatabaseDataSet"
+        Me.DatabaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Table1TableAdapter1
+        '
+        Me.Table1TableAdapter1.ClearBeforeFill = True
+        '
         'Graph
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -127,14 +127,15 @@ Partial Class Graph
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnLoad)
         Me.Controls.Add(Me.WeightChart)
+        Me.MinimumSize = New System.Drawing.Size(1039, 616)
         Me.Name = "Graph"
         Me.Text = "Graph"
         CType(Me.WeightChart, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Table1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DatabaseDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DatabaseDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Table1BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DatabaseDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

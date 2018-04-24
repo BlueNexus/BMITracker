@@ -51,4 +51,9 @@
     Private Sub btnStats_Click(sender As Object, e As EventArgs) Handles btnStats.Click
         StatsForm.Show()
     End Sub
+
+    Private Sub btnTimers_Click(sender As Object, e As EventArgs) Handles btnTimers.Click
+        Me.Hide()
+        frmTimers.Show()
+    End Sub
 End Class

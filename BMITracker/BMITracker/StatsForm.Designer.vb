@@ -98,16 +98,15 @@ Partial Class StatsForm
         Me.lblInfo.AutoSize = True
         Me.lblInfo.Location = New System.Drawing.Point(23, 104)
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(39, 13)
+        Me.lblInfo.Size = New System.Drawing.Size(0, 13)
         Me.lblInfo.TabIndex = 9
-        Me.lblInfo.Text = "Label4"
         '
         'BMI
         '
         Me.BMI.FormattingEnabled = True
         Me.BMI.Location = New System.Drawing.Point(151, 12)
         Me.BMI.Name = "BMI"
-        Me.BMI.Size = New System.Drawing.Size(120, 95)
+        Me.BMI.Size = New System.Drawing.Size(120, 82)
         Me.BMI.TabIndex = 10
         '
         'StatsForm

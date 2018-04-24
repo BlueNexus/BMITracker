@@ -22,7 +22,6 @@ Partial Class Info
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Info))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
@@ -41,6 +40,7 @@ Partial Class Info
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Calibri", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
@@ -51,6 +51,8 @@ Partial Class Info
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel1.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.Location = New System.Drawing.Point(25, 70)
         Me.LinkLabel1.Name = "LinkLabel1"
@@ -63,6 +65,8 @@ Partial Class Info
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel2.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel2.Location = New System.Drawing.Point(25, 93)
         Me.LinkLabel2.Name = "LinkLabel2"
@@ -75,6 +79,8 @@ Partial Class Info
         'LinkLabel3
         '
         Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel3.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel3.Location = New System.Drawing.Point(25, 116)
         Me.LinkLabel3.Name = "LinkLabel3"
@@ -87,6 +93,8 @@ Partial Class Info
         'LinkLabel4
         '
         Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel4.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel4.Location = New System.Drawing.Point(25, 139)
         Me.LinkLabel4.Name = "LinkLabel4"
@@ -99,6 +107,8 @@ Partial Class Info
         'LinkLabel5
         '
         Me.LinkLabel5.AutoSize = True
+        Me.LinkLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel5.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel5.Location = New System.Drawing.Point(25, 162)
         Me.LinkLabel5.Name = "LinkLabel5"
@@ -111,6 +121,8 @@ Partial Class Info
         'LinkLabel6
         '
         Me.LinkLabel6.AutoSize = True
+        Me.LinkLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel6.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel6.Location = New System.Drawing.Point(25, 185)
         Me.LinkLabel6.Name = "LinkLabel6"
@@ -123,6 +135,8 @@ Partial Class Info
         'LinkLabel7
         '
         Me.LinkLabel7.AutoSize = True
+        Me.LinkLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel7.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel7.Location = New System.Drawing.Point(25, 208)
         Me.LinkLabel7.Name = "LinkLabel7"
@@ -135,6 +149,8 @@ Partial Class Info
         'LinkLabel8
         '
         Me.LinkLabel8.AutoSize = True
+        Me.LinkLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel8.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel8.Location = New System.Drawing.Point(25, 231)
         Me.LinkLabel8.Name = "LinkLabel8"
@@ -147,6 +163,8 @@ Partial Class Info
         'LinkLabel9
         '
         Me.LinkLabel9.AutoSize = True
+        Me.LinkLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel9.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel9.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel9.Location = New System.Drawing.Point(25, 254)
         Me.LinkLabel9.Name = "LinkLabel9"
@@ -158,7 +176,7 @@ Partial Class Info
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Location = New System.Drawing.Point(388, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(208, 389)
@@ -167,18 +185,23 @@ Partial Class Info
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Calibri", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(17, 372)
+        Me.Button1.BackColor = System.Drawing.Color.SteelBlue
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Maiandra GD", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(12, 361)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(119, 29)
+        Me.Button1.Size = New System.Drawing.Size(128, 40)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "Home"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Info
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.BackgroundImage = Global.BMITracker.My.Resources.Resources.FreeVector_Circuit_Tree_Vector
         Me.ClientSize = New System.Drawing.Size(608, 413)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)

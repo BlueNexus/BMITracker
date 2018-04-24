@@ -36,84 +36,107 @@ Partial Class StatsForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 47)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(16, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 13)
+        Me.Label1.Size = New System.Drawing.Size(64, 19)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Weight"
+        Me.Label1.Text = "Weight:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(23, 21)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 13)
+        Me.Label2.Size = New System.Drawing.Size(57, 19)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Name"
+        Me.Label2.Text = "Name:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(23, 76)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(19, 76)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.Size = New System.Drawing.Size(61, 19)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Height"
+        Me.Label3.Text = "Height:"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(26, 129)
+        Me.Button1.BackColor = System.Drawing.Color.SteelBlue
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Maiandra GD", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(12, 142)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 39)
+        Me.Button1.Size = New System.Drawing.Size(136, 48)
         Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Back to Menu"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Text = "Home"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(68, 21)
+        Me.lblName.BackColor = System.Drawing.Color.Transparent
+        Me.lblName.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.Location = New System.Drawing.Point(76, 21)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(0, 13)
+        Me.lblName.Size = New System.Drawing.Size(0, 19)
         Me.lblName.TabIndex = 6
         '
         'lblWeight
         '
         Me.lblWeight.AutoSize = True
-        Me.lblWeight.Location = New System.Drawing.Point(71, 47)
+        Me.lblWeight.BackColor = System.Drawing.Color.Transparent
+        Me.lblWeight.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWeight.Location = New System.Drawing.Point(76, 47)
         Me.lblWeight.Name = "lblWeight"
-        Me.lblWeight.Size = New System.Drawing.Size(0, 13)
+        Me.lblWeight.Size = New System.Drawing.Size(0, 19)
         Me.lblWeight.TabIndex = 7
         '
         'lblHeight
         '
         Me.lblHeight.AutoSize = True
-        Me.lblHeight.Location = New System.Drawing.Point(74, 76)
+        Me.lblHeight.BackColor = System.Drawing.Color.Transparent
+        Me.lblHeight.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeight.Location = New System.Drawing.Point(76, 76)
         Me.lblHeight.Name = "lblHeight"
-        Me.lblHeight.Size = New System.Drawing.Size(0, 13)
+        Me.lblHeight.Size = New System.Drawing.Size(0, 19)
         Me.lblHeight.TabIndex = 8
         '
         'lblInfo
         '
         Me.lblInfo.AutoSize = True
-        Me.lblInfo.Location = New System.Drawing.Point(23, 104)
+        Me.lblInfo.BackColor = System.Drawing.Color.Transparent
+        Me.lblInfo.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInfo.Location = New System.Drawing.Point(31, 104)
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(0, 13)
+        Me.lblInfo.Size = New System.Drawing.Size(0, 16)
         Me.lblInfo.TabIndex = 9
         '
         'BMI
         '
+        Me.BMI.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.BMI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.BMI.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BMI.FormattingEnabled = True
+        Me.BMI.ItemHeight = 16
         Me.BMI.Location = New System.Drawing.Point(151, 12)
         Me.BMI.Name = "BMI"
-        Me.BMI.Size = New System.Drawing.Size(120, 82)
+        Me.BMI.Size = New System.Drawing.Size(175, 82)
         Me.BMI.TabIndex = 10
         '
         'StatsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(306, 189)
+        Me.BackgroundImage = Global.BMITracker.My.Resources.Resources.FreeVector_Circuit_Tree_Vector
+        Me.ClientSize = New System.Drawing.Size(354, 202)
         Me.Controls.Add(Me.BMI)
         Me.Controls.Add(Me.lblInfo)
         Me.Controls.Add(Me.lblHeight)

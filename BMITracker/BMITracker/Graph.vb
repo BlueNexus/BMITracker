@@ -19,9 +19,9 @@ Public Class Graph
 
         'Connect to DB
         Dim Conn As OleDbConnection = New OleDbConnection
-        Dim provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
-        Dim dataFile = "C:\Users\Andrew\Documents\College\BMITracker\BMITracker\BMITracker\Database.accdb" ' Change it to your Access Database location
-        Conn.ConnectionString = provider & dataFile
+        'DO NOT EDIT THIS LINE
+        Dim provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Database.accdb"
+        Conn.ConnectionString = provider
         Conn.Open()
 
         'Load table into variable
@@ -35,6 +35,10 @@ Public Class Graph
             'Close
         End While
         dr.Close()
+
+    End Sub
+
+    Private Sub Graph_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

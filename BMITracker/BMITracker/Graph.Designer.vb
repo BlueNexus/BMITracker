@@ -45,10 +45,10 @@ Partial Class Graph
         Me.btnLoad.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnLoad.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoad.Location = New System.Drawing.Point(419, 220)
-        Me.btnLoad.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnLoad.Location = New System.Drawing.Point(838, 423)
+        Me.btnLoad.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnLoad.Name = "btnLoad"
-        Me.btnLoad.Size = New System.Drawing.Size(82, 57)
+        Me.btnLoad.Size = New System.Drawing.Size(164, 110)
         Me.btnLoad.TabIndex = 1
         Me.btnLoad.Text = "Load"
         Me.btnLoad.UseVisualStyleBackColor = False
@@ -77,23 +77,24 @@ Partial Class Graph
         Me.chrtGraph.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.chrtGraph.Legends.Add(Legend1)
-        Me.chrtGraph.Location = New System.Drawing.Point(12, 12)
+        Me.chrtGraph.Location = New System.Drawing.Point(24, 23)
+        Me.chrtGraph.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.chrtGraph.Name = "chrtGraph"
         Me.chrtGraph.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.chrtGraph.Size = New System.Drawing.Size(295, 276)
+        Me.chrtGraph.Size = New System.Drawing.Size(590, 531)
         Me.chrtGraph.TabIndex = 2
         Me.chrtGraph.Text = "Weight over time"
         '
         'Graph
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.BMITracker.My.Resources.Resources.FreeVector_Circuit_Tree_Vector
-        Me.ClientSize = New System.Drawing.Size(512, 300)
+        Me.ClientSize = New System.Drawing.Size(1024, 577)
         Me.Controls.Add(Me.chrtGraph)
         Me.Controls.Add(Me.btnLoad)
-        Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.MinimumSize = New System.Drawing.Size(528, 339)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MinimumSize = New System.Drawing.Size(1030, 586)
         Me.Name = "Graph"
         Me.Text = "Graph"
         CType(Me.Table1BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -14,7 +14,8 @@ Public Class frmAdd
         Dim weight As Double = txtWeight.Text
 
         'Connect to DB
-        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Andrew\Documents\College\BMITracker\BMITracker\BMITracker\Database.accdb"
+        'DO NOT EDIT THIS LINE
+        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Database.accdb"
         connString = provider
         myConnection.ConnectionString = connString
         myConnection.Open()

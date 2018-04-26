@@ -11,14 +11,16 @@ Public Class frmAdd
 
 
         'Get weight
-        Dim weight As Integer = txtWeight.Text
+        Dim weight As Double = txtWeight.Text
 
-        'Update database
-        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Database.accdb"
+        'Connect to DB
+        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Andrew\Documents\College\BMITracker\BMITracker\BMITracker\Database.accdb"
         connString = provider
         myConnection.ConnectionString = connString
         myConnection.Open()
-        MsgBox(myConnection.state())
+        MessageBox.Show("Success!")
+
+        'Add new weight to DB
         Dim str As String
         str = "INSERT INTO Table1 ([Weight], [BMI]) VALUES ('" & weight & "','" & 3 & "');"
         Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
@@ -26,6 +28,8 @@ Public Class frmAdd
 
         'Close
         myConnection.Close()
+
+        Me.Close()
 
     End Sub
 

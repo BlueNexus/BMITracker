@@ -37,10 +37,10 @@ Partial Class StatsForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(16, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 19)
+        Me.Label1.Size = New System.Drawing.Size(63, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Weight:"
         '
@@ -48,10 +48,10 @@ Partial Class StatsForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(23, 21)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(16, 21)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 19)
+        Me.Label2.Size = New System.Drawing.Size(55, 20)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Name:"
         '
@@ -59,10 +59,10 @@ Partial Class StatsForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(19, 76)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(16, 76)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(61, 19)
+        Me.Label3.Size = New System.Drawing.Size(60, 20)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Height:"
         '
@@ -71,7 +71,7 @@ Partial Class StatsForm
         Me.Button1.BackColor = System.Drawing.Color.SteelBlue
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Maiandra GD", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(12, 142)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(136, 48)
@@ -83,37 +83,37 @@ Partial Class StatsForm
         '
         Me.lblName.AutoSize = True
         Me.lblName.BackColor = System.Drawing.Color.Transparent
-        Me.lblName.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblName.Location = New System.Drawing.Point(76, 21)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(0, 19)
+        Me.lblName.Size = New System.Drawing.Size(0, 20)
         Me.lblName.TabIndex = 6
         '
         'lblWeight
         '
         Me.lblWeight.AutoSize = True
         Me.lblWeight.BackColor = System.Drawing.Color.Transparent
-        Me.lblWeight.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWeight.Location = New System.Drawing.Point(76, 47)
         Me.lblWeight.Name = "lblWeight"
-        Me.lblWeight.Size = New System.Drawing.Size(0, 19)
+        Me.lblWeight.Size = New System.Drawing.Size(0, 20)
         Me.lblWeight.TabIndex = 7
         '
         'lblHeight
         '
         Me.lblHeight.AutoSize = True
         Me.lblHeight.BackColor = System.Drawing.Color.Transparent
-        Me.lblHeight.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHeight.Location = New System.Drawing.Point(76, 76)
         Me.lblHeight.Name = "lblHeight"
-        Me.lblHeight.Size = New System.Drawing.Size(0, 19)
+        Me.lblHeight.Size = New System.Drawing.Size(0, 20)
         Me.lblHeight.TabIndex = 8
         '
         'lblInfo
         '
         Me.lblInfo.AutoSize = True
         Me.lblInfo.BackColor = System.Drawing.Color.Transparent
-        Me.lblInfo.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblInfo.Location = New System.Drawing.Point(31, 104)
         Me.lblInfo.Name = "lblInfo"
         Me.lblInfo.Size = New System.Drawing.Size(0, 16)
@@ -123,10 +123,10 @@ Partial Class StatsForm
         '
         Me.BMI.BackColor = System.Drawing.Color.LightSteelBlue
         Me.BMI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.BMI.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BMI.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BMI.FormattingEnabled = True
         Me.BMI.ItemHeight = 16
-        Me.BMI.Location = New System.Drawing.Point(151, 12)
+        Me.BMI.Location = New System.Drawing.Point(226, 12)
         Me.BMI.Name = "BMI"
         Me.BMI.Size = New System.Drawing.Size(175, 82)
         Me.BMI.TabIndex = 10
@@ -136,7 +136,7 @@ Partial Class StatsForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.BMITracker.My.Resources.Resources.FreeVector_Circuit_Tree_Vector
-        Me.ClientSize = New System.Drawing.Size(354, 202)
+        Me.ClientSize = New System.Drawing.Size(413, 202)
         Me.Controls.Add(Me.BMI)
         Me.Controls.Add(Me.lblInfo)
         Me.Controls.Add(Me.lblHeight)
@@ -147,7 +147,7 @@ Partial Class StatsForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "StatsForm"
-        Me.Text = "StatsForm"
+        Me.Text = "Stats"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

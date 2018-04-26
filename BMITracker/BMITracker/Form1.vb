@@ -20,6 +20,7 @@
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
 
+        'Exit
         Me.Close()
 
     End Sub
@@ -33,27 +34,32 @@
 
     Private Sub btnGraph_Click(sender As Object, e As EventArgs) Handles btnGraph.Click
 
+        'Show graph
         Graph.Show()
 
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+
         'Hides the Main menu
         Me.Hide()
         'Load the Info Form
         Info.Show()
+
     End Sub
 
     Private Sub btnStats_Click(sender As Object, e As EventArgs) Handles btnStats.Click
+
+        'Show stats form
         StatsForm.Show()
+
     End Sub
 
     Private Sub btnTimers_Click(sender As Object, e As EventArgs) Handles btnTimers.Click
+
+        'Hide this form, show timers
         Me.Hide()
         frmTimers.Show()
+
     End Sub
 End Class

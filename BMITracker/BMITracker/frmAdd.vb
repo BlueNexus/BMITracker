@@ -1,4 +1,5 @@
 ﻿Imports System.Data.OleDb
+Imports System.Text.RegularExpressions
 
 Public Class frmAdd
 
@@ -9,9 +10,16 @@ Public Class frmAdd
 
     Private Sub btnOK_Click(sender As Object, e As EventArgs) Handles btnOK.Click
 
+        'If Not TryCast(txtWeight.Text, Double) Then
+        'Return
+        'End If
 
         'Get weight
         Dim weight As Double = txtWeight.Text
+        Dim Height = Form1.Height / 100
+
+        'Calculate BMI
+        Dim bmi = ((weight / Height) / Height)
 
         'Connect to DB
         'DO NOT EDIT THIS LINE
@@ -23,7 +31,7 @@ Public Class frmAdd
 
         'Add new weight to DB
         Dim str As String
-        str = "INSERT INTO Table1 ([Weight], [BMI]) VALUES ('" & weight & "','" & 3 & "');"
+        str = "INSERT INTO Table1 ([Weight], [BMI]) VALUES ('" & weight & "','" & bmi & "');"
         Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
         cmd.ExecuteNonQuery()
 
@@ -43,5 +51,16 @@ Public Class frmAdd
 
     Private Sub frmAdd_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub txtWeight_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtWeight.KeyPress
+        If Not Char.IsNumber(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso Not e.KeyChar = "." Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtWeight_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtWeight.TextChanged
+        Dim digitsOnly As Regex = New Regex("[^\d]")
+        txtWeight.Text = digitsOnly.Replace(txtWeight.Text, "")
     End Sub
 End Class

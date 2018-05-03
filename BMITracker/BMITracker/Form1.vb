@@ -1,20 +1,30 @@
 ﻿Public Class Form1
     Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
 
-        'Declare variables and get values
+        'Declare variables
         Dim name As String = txtName.Text
         Dim height, weight, bmi As Single
-        height = txtHeight.Text
-        weight = txtWeight.Text
 
-        'Convert height to M
-        height = height / 100
+        'Validation
+        If IsNumeric(txtHeight.Text) And IsNumeric(txtWeight.Text) Then
 
-        'Calculate BMI
-        bmi = ((weight / height) / height)
+            height = txtHeight.Text
+            weight = txtWeight.Text
 
-        'Output
-        lblBMI.Text = name & " your BMI is: " & bmi
+            'Convert height to M
+            height = height / 100
+
+            'Calculate BMI
+            bmi = ((weight / height) / height)
+
+            'Output
+            lblBMI.Text = name & " your BMI is: " & bmi
+        Else
+            'Give error if non numerics entered in height and weight
+            MessageBox.Show("Enter a number into height and weight")
+        End If
+
+
 
     End Sub
 

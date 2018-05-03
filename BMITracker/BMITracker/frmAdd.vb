@@ -10,27 +10,34 @@ Public Class frmAdd
     Private Sub btnOK_Click(sender As Object, e As EventArgs) Handles btnOK.Click
 
 
-        'Get weight
-        Dim weight As Double = txtWeight.Text
+        'Get weight and validate
+        If IsNumeric(txtWeight.Text) Then
+            Dim weight As Double = txtWeight.Text
+            'Connect to DB
+            'DO NOT EDIT THIS LINE
+            provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Database.accdb"
+            connString = provider
+            myConnection.ConnectionString = connString
+            myConnection.Open()
+            MessageBox.Show("Success!")
 
-        'Connect to DB
-        'DO NOT EDIT THIS LINE
-        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Database.accdb"
-        connString = provider
-        myConnection.ConnectionString = connString
-        myConnection.Open()
-        MessageBox.Show("Success!")
+            'Add new weight to DB
+            Dim str As String
+            str = "INSERT INTO Table1 ([Weight], [BMI]) VALUES ('" & weight & "','" & 3 & "');"
+            Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
+            cmd.ExecuteNonQuery()
 
-        'Add new weight to DB
-        Dim str As String
-        str = "INSERT INTO Table1 ([Weight], [BMI]) VALUES ('" & weight & "','" & 3 & "');"
-        Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
-        cmd.ExecuteNonQuery()
+            'Close
+            myConnection.Close()
 
-        'Close
-        myConnection.Close()
+            Me.Close()
+        Else
+            'Throw error if invalid input
+            MessageBox.Show("Enter a valid weight please. Numbers only!")
+        End If
 
-        Me.Close()
+
+
 
     End Sub
 

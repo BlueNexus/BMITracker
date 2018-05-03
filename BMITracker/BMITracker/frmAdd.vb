@@ -1,4 +1,5 @@
 ﻿Imports System.Data.OleDb
+Imports System.Text.RegularExpressions
 
 Public Class frmAdd
 
@@ -8,7 +9,6 @@ Public Class frmAdd
     Dim myConnection As OleDbConnection = New OleDbConnection
 
     Private Sub btnOK_Click(sender As Object, e As EventArgs) Handles btnOK.Click
-
 
         'Get weight and validate
         If IsNumeric(txtWeight.Text) Then
@@ -36,9 +36,6 @@ Public Class frmAdd
             MessageBox.Show("Enter a valid weight please. Numbers only!")
         End If
 
-
-
-
     End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
@@ -50,5 +47,16 @@ Public Class frmAdd
 
     Private Sub frmAdd_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub txtWeight_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtWeight.KeyPress
+        If Not Char.IsNumber(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso Not e.KeyChar = "." Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtWeight_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtWeight.TextChanged
+        Dim digitsOnly As Regex = New Regex("[^\d]")
+        txtWeight.Text = digitsOnly.Replace(txtWeight.Text, "")
     End Sub
 End Class

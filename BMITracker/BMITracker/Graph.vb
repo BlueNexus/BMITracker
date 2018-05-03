@@ -15,7 +15,9 @@ Public Class Graph
 
         'Create graph series for weight
         chrtGraph.Series.Add("Weight")
+        chrtGraph.Series.Add("BMI")
         chrtGraph.Series("Weight").ChartType = SeriesChartType.Line
+        chrtGraph.Series("BMI").ChartType = SeriesChartType.Line
 
         'Connect to DB
         Dim Conn As OleDbConnection = New OleDbConnection
@@ -25,13 +27,14 @@ Public Class Graph
         Conn.Open()
 
         'Load table into variable
-        Dim cmd As OleDbCommand = New OleDbCommand("SELECT [Weight] FROM [Table1]", Conn)
+        Dim cmd As OleDbCommand = New OleDbCommand("SELECT [Weight], [BMI] FROM [Table1]", Conn)
         Dim dr As OleDbDataReader = cmd.ExecuteReader
 
         'Loop through data
         While dr.Read
             'Update graph with current item
-            chrtGraph.Series("Weight").Points.Add(dr("Weight").ToString)
+            chrtGraph.Series("Weight").Points.Add(dr("Weight").ToString())
+            chrtGraph.Series("BMI").Points.Add(dr("BMI").ToString())
             'Close
         End While
         dr.Close()
